@@ -29,9 +29,14 @@
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
+  margin-top: 0%;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -46,6 +51,18 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ---Header classes--- */
 .header {
   background-color: var(--header-bckgrnd-color);
@@ -56,6 +73,8 @@ body {
 }
 
 .logo {
+  margin-right: 93px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -75,6 +94,9 @@ body {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--header-primary-color);
 }
 
@@ -82,17 +104,44 @@ body {
   color: var(--accent-color);
 }
 
-.contact {
+.contact-link {
   color: var(--header-secondary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list .list-item:not(:last-child) {
+  margin-right: 50px;
+}
 /*--- Hero styles ---*/
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -102,6 +151,11 @@ body {
   color: var(--main-title-color);
 }
 .button {
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -131,7 +185,18 @@ body {
   margin: -1px;
 }
 
+.features-list {
+  display: flex;
+}
+
+.features .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .sub-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: inherit;
   line-height: 1.14;
@@ -139,10 +204,25 @@ body {
   color: var(--secondary-title-color);
 }
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   line-height: 1.71;
   font-size: inherit;
 }
 /* --- Doing something important))) --- */
+
+.works-list {
+  display: flex;
+}
+
+.works-list .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.works-img {
+  display: block;
+}
 
 /*--- My young team and me ---))) */
 .team {
@@ -150,6 +230,10 @@ body {
   line-height: 1.19;
   font-size: 16px;
   letter-spacing: 0.03em;
+}
+
+.team-list {
+  display: flex;
 }
 .name {
   font-size: inherit;
