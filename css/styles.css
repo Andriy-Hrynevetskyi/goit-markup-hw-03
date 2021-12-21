@@ -1,6 +1,7 @@
 :root {
   --header-primary-color: #212121;
   --header-secondary-color: #757575;
+  --header-border: #ececec;
   --logo-primary-color: #2196f3;
   --logo-secondary-color: #000000;
   --third-logo-color: #ffffff;
@@ -44,7 +45,11 @@
   color: var(--secondary-title-color);
   font-weight: 700;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   color: var(--text-color);
   background-color: var(--primary-bckgrnd-color);
@@ -65,6 +70,7 @@ body {
 
 /* ---Header classes--- */
 .header {
+  border-bottom: 1px solid var(--header-border);
   background-color: var(--header-bckgrnd-color);
   font-weight: 500;
   font-size: 14px;
@@ -188,6 +194,9 @@ body {
 .features-list {
   display: flex;
 }
+.features .list-item {
+  flex-basis: calc(100% / 4-30);
+}
 
 .features .list-item:not(:last-child) {
   margin-right: 30px;
@@ -215,7 +224,9 @@ body {
 .works-list {
   display: flex;
 }
-
+.works-list .list-item {
+  flex-basis: calc(100% / 3-30);
+}
 .works-list .list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -235,7 +246,28 @@ body {
 .team-list {
   display: flex;
 }
+.team-item {
+  flex-basis: calc(100 / 4-30px);
+}
+.team-list .team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.card {
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+}
+
+.card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--header-bckgrnd-color);
+  border-radius: 4px;
+}
 .name {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: inherit;
   font-weight: 500;
   color: var(--secondary-title-color);
@@ -243,17 +275,26 @@ body {
 
 .position {
   color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ---Footer--- */
 
 .footer {
   background-color: var(--footer-bckgrnd-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   color: var(--third-logo-color);
 }
-
+.footer .logo {
+  margin-right: 0;
+}
+.footer-logotype {
+  margin-bottom: 20px;
+}
 .address {
   font-style: normal;
   font-weight: normal;
