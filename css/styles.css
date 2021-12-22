@@ -22,6 +22,7 @@
   --footer-bckgrnd-color: #2f303a;
   --contact-footer-color: rgba(255, 255, 255, 0.6);
   --address-color: #ffffff;
+  --portfolio-card-bg: #eeeeee;
 }
 
 /* ---Global classes and selectors--- */
@@ -360,6 +361,8 @@ body {
   flex-wrap: wrap;
 }
 .portfolio-title {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -368,6 +371,7 @@ body {
 }
 
 .portfolio-text {
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -384,8 +388,12 @@ body {
 .flex-item:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.portfolio-card {
-}
 
 .portfolio-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--primary-bckgrnd-color);
+  border: 1px solid #eeeeee;
 }
